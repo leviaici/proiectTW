@@ -51,38 +51,65 @@ s {
 
 #grid-pagina {
     display: grid;
-    grid-template-areas: "z-detaliiAutor z-detaliiAutor z-detaliiAutor z-detaliiAutor" "z-diverse z-diverse z-diverse z-diverse" 
-    "z-calendar z-tabel z-tabel z-anunturi" "z-listaUtilizatori z-dateUtilizator z-dateSiteServer z-dateSiteServer";
+    grid-template-areas: "f-detaliiAutor f-detaliiAutor f-detaliiAutor f-detaliiAutor" "f-diverse f-diverse f-diverse f-diverse" 
+    "f-calendar f-tabel f-tabel f-anunturi" "f-listaUtilizatori f-dateUtilizator f-comanda f-comanda";
 }
 
 #detaliiAutor {
-    grid-area: z-detaliiAutor;
+    grid-area: f-detaliiAutor;
+    margin-bottom: 10px;
+}
+
+#pozaL {
+    display: block;
+    margin: 0 auto;
 }
 
 #diverse {
-    grid-area: z-diverse;
+    grid-area: f-diverse;
+    margin-top: 10px;
 }
 
 #calendar {
-    grid-area: z-calendar;
+    grid-area: f-calendar;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 #tabel {
-    grid-area: z-tabel;
+    grid-area: f-tabel;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 #anunturi {
-    grid-area: z-anunturi;
+    grid-area: f-anunturi;
+    margin-top: 10px;
 }
 
 #listaUtilizatori {
-    grid-area: z-listaUtilizatori;
+    grid-area: f-listaUtilizatori;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #dateUtilizator {
-    grid-area: z-dateUtilizator;
+    grid-area: f-dateUtilizator;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-#dateSiteServer {
-    grid-area: z-dateSiteServer;
+#comanda {
+    grid-area: f-comanda;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
+
+#tabel td, #tabel th{
+    color: var(--highlight);
+    border:1px solid var(--scris);
+}
+        
