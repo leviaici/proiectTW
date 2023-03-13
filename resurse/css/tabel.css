@@ -61,4 +61,8 @@ tfoot td {
 
 thead td {
     border: 5px solid;
-} 
+}
+
+#tabelul {
+    overflow-x: scroll;
+}
